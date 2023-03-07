@@ -207,7 +207,6 @@ export const currentChallengeIdSelector = state =>
 
 export const emailSelector = state => userSelector(state).email;
 export const isVariantASelector = state => {
-  const email = emailSelector(state);
   // if the user is not signed in and the user info is not available.
   // always return A the control variant
   if (!email) return true;
